@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SmartNinja Weather</title>
+    </head>
+
+    <body>
+        <h1>SmartNinja Weather</h1>
+
+
+        <p> Location : {{ data.name }}</p>
+        <p> Forecast : <strong>{{ data.weather[0].main }}</strong> {{data.weather[0].description }}</p>
+        <p> Current Temp : {{ data.main.temp }} feels like {{ data.main.feels_like }}</p>
+        <p> Min Temp : {{ data.main.temp_min }}</p>
+        <p> Max Temp : {{ data.main.temp_max }}</p>
+
+    </body>
+</html>
